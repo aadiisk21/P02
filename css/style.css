@@ -4,7 +4,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove margins and paddings */
@@ -18,27 +18,41 @@ h6,
 p,
 ol,
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Set default font size and family */
 body {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  background-color: hsl(257, 40%, 49%);
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Remove list styles */
 ol,
 ul {
-  list-style: none;
-}
-
-/* Remove hyperlink underline */
-footer a {
-  text-decoration: none;
-  color: black;
+    list-style: none;
 }
 
 /* Additional resets and customizations go here */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
