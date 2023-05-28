@@ -36,6 +36,17 @@ body {
     background-attachment: fixed;
 }
 
+@media screen and (max-width:460px) {
+    body {
+        width: 100%;
+        height: auto;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
+}
+
 /* Remove list styles */
 ol,
 ul {
@@ -148,20 +159,4 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
-}
-
-@media screen and (max-width:460px) {
-    body {
-        width: 100%;
-        height: auto;
-        background-image: url(../images/bg-mobile.svg);
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
-    }
-
-    .container {
-        display: none;
-    }
-
 }
